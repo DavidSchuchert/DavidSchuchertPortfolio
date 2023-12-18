@@ -1,0 +1,35 @@
+header {
+  height: 110px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+
+
+  .header-menu{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 23px;
+
+
+    a{
+        padding-left: 29px;
+        color: white;
+        text-decoration: none;
+    }
+
+  }
+}
+
+.name-logo {
+  color: white;
+  font-family: "DiscoMo";
+  font-size: 60px;
+}
+
+
