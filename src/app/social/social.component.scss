@@ -1,0 +1,46 @@
+.social{
+    z-index: 1;
+    position: fixed;
+    display:flex;
+    align-items: center;
+    gap: 42px;
+    top: 905px;
+    img{
+        height: 30px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Poppins' ;
+        font-size: 23px;
+        font-weight: 400;
+    }
+}
+
+.stripe{
+    width: 100px;
+    height: 4px;
+    background-color: #9747FF;
+    border-radius: 50px;
+}
+
+.scrolldown-section{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    position: fixed;
+    top: 773px;
+    right: 100px;
+    z-index: 10;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+
+    span{
+        writing-mode: vertical-rl;
+    }
+}

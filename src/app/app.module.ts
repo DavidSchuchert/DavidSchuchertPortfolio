@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IAMComponent } from './iam/iam.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    IAMComponent
+    IAMComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
