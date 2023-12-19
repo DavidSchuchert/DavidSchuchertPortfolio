@@ -1,0 +1,63 @@
+.aboutme-section {
+  font-family: "Poppins";
+  color: white;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 142px;
+}
+
+.purple-shadow {
+  position: absolute;
+  top: 750px;
+  right: 0px;
+}
+
+.line {
+  position: absolute;
+  top: 1333px;
+  right: 0px;
+}
+
+.ellipse {
+  position: absolute;
+  top: 1107px;
+  right: 267px;
+}
+
+.aboutme-headline {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.aboutme-text-section {
+  width: 471px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutme-text,
+.personal-things,
+.puzzle {
+  font-weight: 400;
+  font-size: 16px;
+  width: 471px;
+}
+
+.aboutme-text {
+}
+
+.personal-things,
+.puzzle {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.small_profile_pic {
+  position: absolute;
+  right: 269px;
+  top: 1107px;
+  height: 449px;
+  border-radius: 50%;
+}
