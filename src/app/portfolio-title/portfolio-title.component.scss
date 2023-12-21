@@ -1,0 +1,41 @@
+.portfolio_maintitle{
+display:flex;
+align-items: center;
+justify-content: end;
+color: white;
+gap: 50px;
+
+  .strip_short{
+      width: 109px;
+      height: 4px;
+      background-color: #9747ff;
+      border-radius: 50px;
+  }
+
+  .strip_long{
+    width: 35vw;
+    height: 4px;
+    background-color: #9747ff;
+    border-radius: 50px;
+  }
+
+  h1{
+font-family: 'Poppins';
+font-weight: 700;
+font-size: 90px;
+
+  }
+}
+
+span{
+font-weight: 400;
+font-size: 16px;
+font-family: 'Poppins';
+text-align: center;
+color:white;
+display:flex;
+justify-content: end;
+margin-right: 35vw;
+}
+
+
