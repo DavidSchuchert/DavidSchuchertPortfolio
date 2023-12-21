@@ -15,6 +15,7 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 import { RingoffireComponent } from './ringoffire/ringoffire.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactHeaderComponent } from './contact-header/contact-header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,13 @@ import { ContactHeaderComponent } from './contact-header/contact-header.componen
     PokedexComponent,
     RingoffireComponent,
     ContactComponent,
-    ContactHeaderComponent
+    ContactHeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
