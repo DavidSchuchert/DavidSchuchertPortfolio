@@ -167,7 +167,18 @@ html {
   padding-right: 100px;
   padding-left: 100px;
   gap: 180px;
+}
 
+.portfolio-left {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  padding-right: 100px;
+  padding-left: 100px;
+  gap: 180px;
+}
 
   .portfolio-img {
   }
@@ -228,4 +239,4 @@ html {
     gap: 10px;
     background-color: transparent;
   }
-}
+
