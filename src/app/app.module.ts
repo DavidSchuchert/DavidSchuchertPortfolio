@@ -13,6 +13,8 @@ import { JoinComponent } from './join/join.component';
 import { PololocoComponent } from './pololoco/pololoco.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { RingoffireComponent } from './ringoffire/ringoffire.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactHeaderComponent } from './contact-header/contact-header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RingoffireComponent } from './ringoffire/ringoffire.component';
     JoinComponent,
     PololocoComponent,
     PokedexComponent,
-    RingoffireComponent
+    RingoffireComponent,
+    ContactComponent,
+    ContactHeaderComponent
   ],
   imports: [
     BrowserModule,

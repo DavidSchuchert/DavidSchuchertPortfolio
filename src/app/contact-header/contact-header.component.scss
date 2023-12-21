@@ -1,0 +1,19 @@
+.contact-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .contact-header-line {
+    width: 50px;
+    height: 4px;
+    background-color: #9747ff;
+    border-radius: 50px;
+  }
+
+  .contact-header-text {
+    font-family: "Poppins";
+    font-size: 90px;
+    color: white;
+    padding-left: 50px;
+  }
+}
