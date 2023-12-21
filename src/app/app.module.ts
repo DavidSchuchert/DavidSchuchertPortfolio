@@ -11,6 +11,7 @@ import { MyskillsComponent } from './myskills/myskills.component';
 import { PortfolioTitleComponent } from './portfolio-title/portfolio-title.component';
 import { JoinComponent } from './join/join.component';
 import { PololocoComponent } from './pololoco/pololoco.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PololocoComponent } from './pololoco/pololoco.component';
     MyskillsComponent,
     PortfolioTitleComponent,
     JoinComponent,
-    PololocoComponent
+    PololocoComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,
