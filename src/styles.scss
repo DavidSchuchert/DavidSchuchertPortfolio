@@ -154,6 +154,7 @@ html {
   background-color: #141d2f;
   z-index: -10;
   position: absolute;
+  overflow-x: clip;
 }
 
 /* Styles for Portfolio projects */
