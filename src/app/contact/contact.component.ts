@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-contact',
@@ -20,6 +21,16 @@ export class ContactComponent {
 
   @ViewChild('mailField')
   mailField!: ElementRef;
+
+  showPrivacyPolicy: boolean = false;
+
+  constructor(private sharedService: SharedService) {
+
+    // Subscribe to the privacy policy state
+    this.sharedService.showPrivacyPolicy.subscribe(value => {
+      this.showPrivacyPolicy = value;
+    });
+  }
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -57,4 +68,18 @@ export class ContactComponent {
       sendButton.disabled = true;
     }
   }
+
+scrollTop(){
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
+openPrivacyPolicy() {
+  this.sharedService.togglePrivacyPolicy();
+}
+
+
 }

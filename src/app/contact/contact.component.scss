@@ -58,12 +58,11 @@
       font-size: 16px;
       text-indent: 10px;
 
-
-      &:disabled{
+      &:disabled {
         background-color: grey;
       }
 
-      &:hover{
+      &:hover {
         border: 1px solid #70e61c;
       }
     }
@@ -75,7 +74,7 @@
       flex-direction: column;
       gap: 32px;
 
-      &:disabled{
+      &:disabled {
         background-color: grey;
       }
     }
@@ -94,13 +93,11 @@
       font-weight: 400;
       font-size: 16px;
 
-
-      &:disabled{
+      &:disabled {
         background-color: grey;
       }
 
-
-      &:hover{
+      &:hover {
         border: 1px solid #70e61c;
       }
     }
@@ -120,9 +117,10 @@
     font-weight: 400;
   }
 
-  a {
+  span {
     color: #9747ff;
     text-decoration: none;
+    cursor: pointer;
   }
 
   button {
@@ -143,29 +141,30 @@
     transition: ease-in-out 0.2s;
 
     &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-        background-color:#9747FF;
+      cursor: pointer;
+      transform: scale(1.1);
+      background-color: #9747ff;
     }
 
-    &:disabled{
+    &:disabled {
       background-color: grey;
 
-      &:hover{
-        transform: scale(1.0);
-        cursor:not-allowed;
+      &:hover {
+        transform: scale(1);
+        cursor: not-allowed;
       }
     }
   }
 }
 
-.go-up-button{
-  position:absolute;
+.go-up-button {
+  position: absolute;
   top: 6000px;
   right: 100px;
   transition: 0.1s;
 
-  &:hover{
-    filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4337%) hue-rotate(33deg) brightness(93%) contrast(94%);
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4337%)
+      hue-rotate(33deg) brightness(93%) contrast(94%);
   }
 }

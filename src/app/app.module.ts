@@ -17,6 +17,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactHeaderComponent } from './contact-header/contact-header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     ContactHeaderComponent,
     FooterComponent,
+    ImpressumComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,13 +2,11 @@ import { Component } from '@angular/core';
 import { SharedService } from '../shared.service';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'] // Note: It should be `styleUrls` in plural
+  selector: 'app-impressum',
+  templateUrl: './impressum.component.html',
+  styleUrl: './impressum.component.scss'
 })
-export class FooterComponent {
-
-  // This should be a property to store the state
+export class ImpressumComponent {
   showImpressum: boolean = true;
 
   constructor(private sharedService: SharedService) {
@@ -18,8 +16,8 @@ export class FooterComponent {
     });
   }
 
-  // This is a method to toggle impressum
-  openImpressum() {
-    this.sharedService.toggleImpressum();
-  }
+    toggleImpressum(){
+      this.sharedService.toggleImpressum();
+    }
+
 }
