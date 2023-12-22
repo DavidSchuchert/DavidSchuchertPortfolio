@@ -16,6 +16,7 @@ import { RingoffireComponent } from './ringoffire/ringoffire.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactHeaderComponent } from './contact-header/contact-header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RingoffireComponent,
     ContactComponent,
     ContactHeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

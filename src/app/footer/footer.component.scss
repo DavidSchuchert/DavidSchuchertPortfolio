@@ -1,0 +1,58 @@
+.footer-container {
+  height: 291px;
+  border-top: 4px solid #70e61c;
+  background-color: #141d2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  font-family: "Poppins";
+  margin-top: 150px;
+
+  .logo-impressum {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    span {
+      font-family: "DiscoMo";
+      font-size: 60px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: (0.6s);
+
+      &:hover{
+        text-decoration-color: #1CDAE6;
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 23px;
+  }
+
+  .social-buttons-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+
+    img {
+      cursor: pointer;
+      transition: ease-in-out 0.1s;
+
+      &:hover{
+        cursor:pointer;
+        transform: scale(1.3);
+      }
+
+    }
+
+  }
+}

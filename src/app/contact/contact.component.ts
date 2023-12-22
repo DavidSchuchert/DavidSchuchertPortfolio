@@ -18,12 +18,10 @@ export class ContactComponent {
   @ViewChild('sendButton')
   sendButton!: ElementRef;
 
-
   @ViewChild('mailField')
   mailField!: ElementRef;
 
   async sendMail() {
-    console.log('Sending mail', this.myForm);
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -47,5 +45,16 @@ export class ContactComponent {
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+  }
+
+  checkboxCheck() {
+    let sendButton = this.sendButton.nativeElement;
+
+
+    if (sendButton.disabled == true) {
+      sendButton.disabled = false;
+    } else {
+      sendButton.disabled = true;
+    }
   }
 }

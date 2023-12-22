@@ -14,6 +14,14 @@
   display: flex;
   gap: 54px;
   flex-wrap: wrap;
+img{
+  &:hover{
+    animation: Bounce 1s ease 0s 1 normal forwards;
+    cursor: pointer;
+  }
+
+}
+
 }
 
 .skills_icons_name {
@@ -68,9 +76,12 @@
     width: 200px;
     height:58px;
     margin-right: calc(197.5px - 100px);
+    transition: ease-in-out 0.2s;
 
     &:hover {
-      cursor: pointer;
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color:#9747FF;
     }
   }
 }
@@ -90,4 +101,53 @@
     left: 0;
     top: 1975px;
     z-index: -1;
+}
+
+
+/* Animations */
+
+@keyframes Bounce {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-18px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-16px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }

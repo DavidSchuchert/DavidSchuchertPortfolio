@@ -13,8 +13,8 @@
 <input placeholder="Your name" required type="text" name="name" #nameField>
 <input placeholder="Your email" required type="email" name="name" #mailField>
 <textarea placeholder="Your message" required type="text" message="message" #messageField></textarea>
-<div class="checkbox-area"><input required class="checkbox" type="checkbox"/>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</div>
-<button #sendButton>{{'Send message :)'}}</button>
+<div class="checkbox-area"><input required class="checkbox" type="checkbox" (change)="checkboxCheck()"/>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</div>
+<button [disabled]="true" #sendButton>{{'Send message :)'}}</button>
 
 
 
@@ -23,3 +23,7 @@
   </div>
 
 </div>
+
+<!-- Position Absolute -->
+
+<a href="#"><img class="go-up-button" src="/assets/img/Go_up_button.png" alt="Go Up"></a>

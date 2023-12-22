@@ -25,6 +25,11 @@ header {
         padding-left: 29px;
         color: white;
         text-decoration: none;
+        transition: 0.6s;
+
+        &:hover{
+          color: #70E61C;
+        }
     }
 
   }

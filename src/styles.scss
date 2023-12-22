@@ -224,6 +224,11 @@ html {
     border-radius: 10px;
     gap: 10px;
     background-color: #9742ff;
+
+    &:hover{
+      cursor: pointer;
+      background-color:#70e61c;
+    }
   }
 
   .portfolio-github {
@@ -238,5 +243,10 @@ html {
     border: 1px solid #70e61c;
     gap: 10px;
     background-color: transparent;
+
+    &:hover{
+      cursor: pointer;
+      background-color:#70e61c;
+    }
   }
 
