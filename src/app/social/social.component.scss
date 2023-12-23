@@ -24,11 +24,14 @@
 }
 
 .stripe {
-  width: 100px;
+  width: 150px;
   height: 4px;
   background-color: #9747ff;
   border-radius: 50px;
 }
+
+
+/* Pos Absolute */
 
 .scrolldown-section {
   color: white;
@@ -37,7 +40,7 @@
   font-weight: 400;
   position: absolute;
   top: 773px;
-  right: 100px;
+  right: 200px;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -48,4 +51,19 @@
   span {
     writing-mode: vertical-rl;
   }
+}
+
+
+/* Responsive */
+
+@media (max-width: 1911px){
+
+  .stripe {
+    width: 70px;
+  }
+
+  .scrolldown-section {
+    right: 100px;
+  }
+
 }

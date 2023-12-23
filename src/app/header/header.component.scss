@@ -6,8 +6,8 @@ header {
   align-items: center;
   padding-top: 37px;
   padding-bottom: 37px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   box-sizing: border-box;
   position: sticky;
   top: 0px;
@@ -43,3 +43,14 @@ img{
 }
 
 
+/* Responsive */
+
+
+
+@media (max-width: 1911px){
+header{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+}

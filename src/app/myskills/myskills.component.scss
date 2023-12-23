@@ -1,7 +1,7 @@
 .myskills-component {
   padding-top: 200px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   color: white;
   font-family: "Poppins";
 
@@ -85,8 +85,10 @@ img{
   }
 }
 
+
+/* Pos Absolute */
 .stripe_myskills{
-        width: 100px;
+        width: 200px;
         height: 4px;
         background-color: #9747ff;
         border-radius: 50px;
@@ -150,3 +152,19 @@ img{
 		transform: translateY(0px);
 	}
 }
+
+
+/* Responsive */
+
+@media (max-width: 1911px) {
+
+  .myskills-component {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .stripe_myskills{
+    width: 100px;
+}
+}
+

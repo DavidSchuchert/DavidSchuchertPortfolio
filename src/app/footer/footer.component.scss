@@ -5,8 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   color: white;
   font-family: "Poppins";
   margin-top: 150px;
@@ -57,3 +57,16 @@
 
   }
 }
+
+
+  /* Responsive */
+
+  @media (max-width: 1911px) {
+
+    .footer-container {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+  }
+

@@ -1,7 +1,8 @@
 .aboutme-section {
   font-family: "Poppins";
   color: white;
-  padding-left: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   display: flex;
   flex-direction: column;
   padding-top: 142px;
@@ -11,19 +12,6 @@
   position: absolute;
   top: 750px;
   right: 0px;
-}
-
-.line {
-  position: absolute;
-  top: 1333px;
-  right: 0px;
-  z-index: 10;
-}
-
-.ellipse {
-  position: absolute;
-  top: 1107px;
-  right: 267px;
 }
 
 .aboutme-headline {
@@ -54,22 +42,57 @@
   align-items: center;
   gap: 35px;
 
-  img{
-
+  img {
     transition: ease-in-out 0.1s;
 
-    &:hover{
-      cursor:pointer;
+    &:hover {
+      cursor: pointer;
       transform: scale(1.3);
     }
-
   }
+}
+
+/* pos Absolute */
+
+.line {
+  position: absolute;
+  top: 1333px;
+  right: 0px;
+  z-index: 10;
+  width: 370px;
+}
+
+.ellipse {
+  position: absolute;
+  top: 1107px;
+  right: 367px;
 }
 
 .small_profile_pic {
   position: absolute;
-  right: 269px;
+  right: 369px;
   top: 1107px;
   height: 449px;
   border-radius: 50%;
+}
+
+/* Responsive */
+
+@media (max-width: 1911px) {
+  .aboutme-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .line {
+    width: auto;
+  }
+
+  .ellipse {
+    right: 267px;
+  }
+
+  .small_profile_pic {
+    right: 269px;
+  }
 }

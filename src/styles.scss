@@ -166,8 +166,8 @@ html {
   align-items: center;
   justify-content: end;
   flex-direction: row;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
   gap: 180px;
 }
 
@@ -177,8 +177,8 @@ html {
   align-items: center;
   justify-content: start;
   flex-direction: row-reverse;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
   gap: 180px;
 }
 
@@ -252,3 +252,19 @@ html {
     }
   }
 
+
+
+  /* Responsive */
+
+@media (max-width: 1911px) {
+  .portfolio-right {
+    padding-right: 100px;
+    padding-left: 100px;
+
+  }
+
+  .portfolio-left {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}

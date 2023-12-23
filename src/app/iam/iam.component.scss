@@ -1,8 +1,8 @@
 .iam-page {
   display: flex;
   justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .full-image {
@@ -12,10 +12,6 @@
   }
 }
 
-.profile-background-shadows{
-    position: absolute;
-    top: 69px;
-}
 
 
 
@@ -23,6 +19,8 @@
     z-index: 10;
     display:flex;
     align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
 }
 
 .iam-vertical {
@@ -38,7 +36,7 @@
 .right-text{
     display:flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 .iam-name {
@@ -71,11 +69,8 @@
     font-weight: 400;
     border: none;
     box-shadow: 4px 4px 4px 5px rgba(0,0,0,0.25);
-    position: absolute;
-    right: 446px;
-    top: 600px;
-    z-index: 20;
     transition: ease-in-out 0.2s;
+    margin-top: 30px;
 
     &:hover {
         cursor: pointer;
@@ -84,11 +79,38 @@
     }
 }
 
+
+/* pos Absolute */
+
+
+.profile-background-shadows{
+  position: absolute;
+  top: 69px;
+  left: 100px;
+}
+
 .swoosh{
   width: 100vw;
   position: absolute;
   top: 384px;
   height: 1078.6px;
   z-index: -1;
+
+}
+
+/* Responsive */
+
+
+@media (max-width: 1911px){
+  .iam-page {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .profile-background-shadows{
+    left: 0px;
+  }
 
 }
