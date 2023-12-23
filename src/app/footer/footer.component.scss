@@ -70,3 +70,13 @@
 
   }
 
+  @media (max-width: 1250px){
+    .footer-container{
+      flex-direction: column;
+    }
+
+    .logo-impressum{
+      padding-top: 30px;
+    }
+  }
+

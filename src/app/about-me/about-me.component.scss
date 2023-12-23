@@ -96,3 +96,68 @@
     right: 269px;
   }
 }
+
+@media (max-width: 1340px) {
+
+
+  .line, .ellipse, .small_profile_pic {
+    display:none;
+  }
+.aboutme-section{
+  align-items: center;
+}
+
+.aboutme-text,
+.personal-things,
+.puzzle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+.purple-shadow{
+  top: 1500px;
+}
+
+}
+
+
+@media(max-width: 1250px ){
+  .purple-shadow{
+    top: 1262px;
+  }
+}
+
+
+@media(max-width: 740px){
+  .aboutme-headline{
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .aboutme-text,
+.personal-things,
+.puzzle {
+  font-size: 14px;
+
+}
+
+}
+
+@media (max-width: 560px){
+.aboutme-section{
+
+padding-left : 0 !important;
+padding-right: 0 !important;
+}
+
+.aboutme-text,
+.personal-things,
+.puzzle {
+word-break: normal;
+font-size: 10px;
+max-width: 90vw;
+}
+
+
+}

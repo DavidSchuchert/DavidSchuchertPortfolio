@@ -154,8 +154,8 @@ html {
   background-color: #141d2f;
   z-index: -10;
   position: absolute;
-  overflow-x: clip;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 /* Styles for Portfolio projects */
@@ -182,89 +182,125 @@ html {
   gap: 180px;
 }
 
-  .portfolio-img {
+.portfolio-img {
+}
+
+.portfolio-project-info {
+  flex-direction: column;
+  display: flex;
+  gap: 35px;
+  max-width: 513px;
+}
+
+.portfolio-project-name {
+  font-weight: 700;
+  font-size: 32px;
+  color: #9742ff;
+}
+
+.portfolio-project-languages {
+  font-weight: 400;
+  font-size: 23px;
+  color: #70e61c;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 86px;
+}
+
+.portfolio-live-test {
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  width: 152px;
+  height: 58px;
+  padding: 15px, 30px, 15px, 30px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #9742ff;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #70e61c;
   }
+}
 
-  .portfolio-project-info {
-    flex-direction: column;
-    display:flex;
-    gap: 35px;
-    max-width: 513px;
+.portfolio-github {
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  width: 137px;
+  height: 58px;
+  padding: 15px, 30px, 15px, 30px;
+  border-radius: 10px;
+  border: 1px solid #70e61c;
+  gap: 10px;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #70e61c;
   }
+}
 
-  .portfolio-project-name {
-    font-weight: 700;
-    font-size: 32px;
-    color: #9742ff;
-  }
-
-  .portfolio-project-languages {
-    font-weight: 400;
-    font-size: 23px;
-    color: #70e61c;
-  }
-
-  .project-description {
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-  }
-
-  .project-buttons {
-    display:flex;
-    gap: 86px;
-  }
-
-  .portfolio-live-test {
-    font-family: "Poppins";
-    font-size: 23px;
-    font-weight: 400;
-    color: white;
-    width: 152px;
-    height: 58px;
-    padding: 15px, 30px, 15px, 30px;
-    border-radius: 10px;
-    gap: 10px;
-    background-color: #9742ff;
-
-    &:hover{
-      cursor: pointer;
-      background-color:#70e61c;
-    }
-  }
-
-  .portfolio-github {
-    font-family: "Poppins";
-    font-size: 23px;
-    font-weight: 400;
-    color: white;
-    width: 137px;
-    height: 58px;
-    padding: 15px, 30px, 15px, 30px;
-    border-radius: 10px;
-    border: 1px solid #70e61c;
-    gap: 10px;
-    background-color: transparent;
-
-    &:hover{
-      cursor: pointer;
-      background-color:#70e61c;
-    }
-  }
-
-
-
-  /* Responsive */
+/* Responsive */
 
 @media (max-width: 1911px) {
   .portfolio-right {
     padding-right: 100px;
     padding-left: 100px;
-
   }
 
   .portfolio-left {
     padding-right: 100px;
     padding-left: 100px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .portfolio-right {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 50px;
+  }
+
+  .portfolio-left {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .portfolio-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-buttons {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 640px){
+  .portfolio-img{
+    img{
+      width: 80vw;
+    }
   }
 }

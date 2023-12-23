@@ -6,21 +6,18 @@
 }
 
 .full-image {
-    z-index: 10;
+  z-index: 10;
   img {
     height: 705px;
   }
 }
 
-
-
-
-.iam-main-text{
-    z-index: 10;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 200px;
+.iam-main-text {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
 }
 
 .iam-vertical {
@@ -29,18 +26,17 @@
   font-size: 64px;
   color: white;
   writing-mode: vertical-rl;
-  transform:rotate(180deg);
+  transform: rotate(180deg);
 }
 
-
-.right-text{
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+.right-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 .iam-name {
-    padding-left: 35px;
+  padding-left: 35px;
   font-family: "Poppins";
   font-weight: 700;
   font-size: 90px;
@@ -48,60 +44,56 @@
 }
 
 .iam-developer {
-    padding-left: 35px;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 58px;
-    color: #9747FF;
+  padding-left: 35px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 58px;
+  color: #9747ff;
 }
 
+.lets-talk-button {
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #70e61c;
+  color: white;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 400;
+  border: none;
+  box-shadow: 4px 4px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+  margin-top: 30px;
 
-.lets-talk-button{
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #70E61C;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 23px;
-    font-weight: 400;
-    border: none;
-    box-shadow: 4px 4px 4px 5px rgba(0,0,0,0.25);
-    transition: ease-in-out 0.2s;
-    margin-top: 30px;
-
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-        background-color:#9747FF;
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #9747ff;
+  }
 }
-
 
 /* pos Absolute */
 
-
-.profile-background-shadows{
+.profile-background-shadows {
   position: absolute;
   top: 69px;
   left: 100px;
 }
 
-.swoosh{
+.swoosh {
   width: 100vw;
   position: absolute;
   top: 384px;
   height: 1078.6px;
   z-index: -1;
-
+  display:none;
 }
 
 /* Responsive */
 
-
-@media (max-width: 1911px){
+@media (max-width: 1911px) {
   .iam-page {
     display: flex;
     justify-content: space-between;
@@ -109,8 +101,209 @@
     padding-right: 100px;
   }
 
-  .profile-background-shadows{
+  .profile-background-shadows {
     left: 0px;
+  }
+}
+
+@media (max-width: 1712px) {
+  .iam-vertical {
+    font-size: 54px;
+  }
+
+  .iam-name {
+    font-size: 60px;
+  }
+
+  .iam-developer {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1441px) {
+  .iam-page {
+    padding-left: 25px;
+    padding-right: 35px;
+
+    .full-image {
+      img {
+        height: 600px;
+      }
+    }
+  }
+
+  .profile-background-shadows {
+    top: 80px;
+    left: 0px;
+    height: 700px;
+  }
+
+  .swoosh {
+    top: 279px;
+  }
+}
+
+@media (max-width: 1351px) {
+  .iam-vertical {
+    font-size: 44px;
+  }
+
+  .iam-name {
+    font-size: 50px;
+  }
+
+  .iam-developer {
+    font-size: 30px;
+  }
+
+  .iam-page {
+    justify-content: space-evenly;
+  }
+
+  .swoosh{
+
+    top: 416px;
+
+    height: 730.599px;
+  }
+}
+
+
+@media (max-width: 1340px){
+  .iam-page{
+    flex-direction: column;
+    align-items: center;
+
+    .full-image{
+      img{
+        height: auto;
+        width: 99vw;
+      }
+      background-image: url('/assets/img/photo_shadows.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+  }
+  .swoosh{
+    top: 788px;
+    height: 405.59900000000005px;
+  }
+
+  .profile-background-shadows{
+display:none;
+  }
+.iam-main-text{
+  margin-top: 30px;
+}
+
+.iam-vertical {
+  font-size: 90px;
+}
+
+.iam-name {
+  font-size: 100px;
+}
+
+.iam-developer {
+  font-size: 90px;
+}
+
+.lets-talk-button{
+  width: 28vw;
+  height: 122px;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+}
+
+@media(max-width: 1250px){
+
+  .iam-page{
+    box-sizing: border-box;
+  }
+
+.iam-vertical {
+  font-size: 60px;
+}
+
+.iam-name {
+  font-size: 60px;
+}
+
+.iam-developer {
+  font-size: 50px;
+}
+
+.lets-talk-button{
+  font-size: 33px;
+}
+
+.profile-background-shadows{
+  max-width: 85vw;
+  height: auto;
+}
+}
+
+@media(max-width: 1000px){
+
+  .profile-background-shadows{
+    max-width: 90vw;
+    transform: translateX(-25%) translateY(-25%);
+    left: calc(50vw - 180px);
+    top: 249px;
+
   }
 
 }
+
+@media(max-width: 740px){
+  .iam-vertical {
+    font-size: 35px;
+  }
+
+  .iam-name {
+    font-size: 35px;
+  }
+
+  .iam-developer {
+    font-size: 25px;
+  }
+  .lets-talk-button{
+    width: 60vw;
+    height: 100px;
+  }
+}
+
+@media(max-width: 640px){
+  .iam-page{
+    .full-image{
+      img{
+        width: 96vw;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 560px){
+
+  .iam-vertical {
+    font-size: 40px;
+  }
+
+  .iam-name {
+    font-size: 40px;
+  }
+
+  .iam-developer {
+    font-size: 30px;
+  }
+
+  .lets-talk-button{
+    width: 60vw;
+  }
+
+}
+

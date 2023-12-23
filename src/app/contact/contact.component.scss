@@ -159,9 +159,7 @@
   }
 }
 
-
 /* Pos Absolute */
-
 
 .go-up-button {
   position: absolute;
@@ -175,21 +173,93 @@
   }
 }
 
+/* Responsive */
 
-
-  /* Responsive */
-
-  @media (max-width: 1911px) {
-
-    .contact-component {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-
-    .go-up-button {
-      right: 100px;
-    }
-
+@media (max-width: 1911px) {
+  .contact-component {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
+  .go-up-button {
+    right: 100px;
+  }
+}
 
+@media (max-width: 1441px) {
+  .go-up-button {
+    top: 5900px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .contact-component {
+    flex-direction: column;
+    padding-top: 0px;
+    align-items: center;
+  }
+
+  .contact-description-need {
+    padding-bottom: 30px;
+  }
+
+  .go-up-button {
+    top: 8911px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .contact-component {
+    .contact-right-side {
+      input {
+        width: 435px;
+      }
+      textarea {
+        width: 435px;
+      }
+      .checkbox-area{
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px){
+  .go-up-button{
+    top:auto;
+    bottom: 370px;
+  }
+}
+
+@media(max-width: 740px){
+
+.contact-component{
+  padding-left: 20px;
+  padding-right: 20px;
+  .contact-right-side{
+    form{
+      .checkbox-area{
+        font-size:12px;
+
+      }
+    }
+  }
+
+}
+}
+
+@media (max-width: 560px) {
+  .contact-component{
+  .contact-right-side{
+    form{
+      .checkbox-area{
+        font-size:10px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+}
