@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  // Zustand des Overlays initialisieren
+  showOverlay = false;
+  hideheader = false;
+
+  // Methode zum Umschalten des Zustands
+  toggleOverlay() {
+    this.showOverlay = !this.showOverlay;
+    this.hideheader = !this.hideheader;
+  }
+
+
+
 }

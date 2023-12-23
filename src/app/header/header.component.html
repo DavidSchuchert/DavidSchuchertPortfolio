@@ -1,3 +1,23 @@
-<header>
-<div class="name-logo" ><img src="/assets/img/name.png" alt="name logo"></div> <div class="header-menu"> <a href="#aboutMe">About me</a>  <a href="#skills">Skills</a>  <a href="#portfolio">Portfolio</a></div>
+<header [class.hideheader]="hideheader">
+  <div class="name-logo"><img src="/assets/img/name.png" alt="name logo"></div>
+  <div class="header-menu"> <a href="#aboutMe">About me</a> <a href="#skills">Skills</a> <a
+      href="#portfolio">Portfolio</a></div>
+
+      <img class="burger_icon" src="/assets/img/burger.svg" alt="burger_menu" (click)="toggleOverlay()">
 </header>
+
+<!-- Buger-Menu -->
+<div class="burger-menu" [class.showoverlay]="showOverlay">
+  <header>
+    <div class="name-logo"><img src="/assets/img/name.png" alt="name logo"> </div> <img class="burger_icon" src="/assets/img/burger.svg" alt="burger_menu" (click)="toggleOverlay()">
+  </header>
+  <div class="burger-content">
+    <div class="burger-text">
+      <a href="#aboutMe">About me</a> <a href="#skills">Skills</a> <a href="#portfolio">Portfolio</a> <a href="#contact">Contact</a>
+
+
+    </div>
+
+  </div>
+
+</div>
