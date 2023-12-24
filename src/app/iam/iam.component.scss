@@ -93,7 +93,7 @@
 
 /* Responsive */
 
-@media (max-width: 1911px) {
+@media (max-width: 1930px) {
   .iam-page {
     display: flex;
     justify-content: space-between;
@@ -101,12 +101,14 @@
     padding-right: 100px;
   }
 
+
+
   .profile-background-shadows {
     left: 0px;
   }
 }
 
-@media (max-width: 1712px) {
+@media (max-width: 1730px) {
   .iam-vertical {
     font-size: 54px;
   }
@@ -120,10 +122,12 @@
   }
 }
 
-@media (max-width: 1441px) {
+
+
+@media (max-width: 1454px) {
   .iam-page {
     padding-left: 25px;
-    padding-right: 35px;
+    padding-right: 25px;
 
     .full-image {
       img {
@@ -278,9 +282,11 @@ display:none;
 
 @media(max-width: 640px){
   .iam-page{
+    padding-left: 0;
+    padding-right: 0;
     .full-image{
       img{
-        width: 96vw;
+        width: 99vw;
       }
     }
   }
@@ -295,10 +301,12 @@ display:none;
 
   .iam-name {
     font-size: 40px;
+    padding-left: 5px;
   }
 
   .iam-developer {
     font-size: 30px;
+    padding-left: 5px;
   }
 
   .lets-talk-button{
@@ -307,3 +315,42 @@ display:none;
 
 }
 
+@media (max-width: 520px) {
+  .iam-vertical {
+    font-size: 30px;
+  }
+
+  .iam-name {
+    font-size: 35px;
+  }
+
+  .iam-developer {
+    font-size: 12px;
+  }
+
+  .lets-talk-button{
+    width: 60vw;
+    height: 80px;
+  }
+}
+
+@media (max-width: 462px) {
+
+  .iam-vertical {
+    font-size: 23px;
+  }
+
+  .iam-name {
+    font-size: 30px;
+  }
+
+  .iam-developer {
+    font-size: 15px;
+  }
+
+  .lets-talk-button{
+    width: 40vw;
+    height: 60px;
+    font-size: 16px;
+  }
+}

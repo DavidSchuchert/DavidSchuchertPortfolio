@@ -71,6 +71,7 @@
   display: flex;
   flex-direction: column;
   gap: 34px;
+  position: relative;
   h1 {
     font-size: 90px;
     font-weight: 700;
@@ -116,8 +117,8 @@
   background-color: #9747ff;
   border-radius: 50px;
   position: absolute;
-  right: 0;
-  top: 2080px;
+  top: 70px;
+  right: -198px;
 }
 
 .greenshadow_myskills {
@@ -184,7 +185,8 @@
   }
 
   .stripe_myskills {
-    width: 100px;
+    top: 70px;
+    right: -198px;
   }
 }
 
@@ -196,7 +198,8 @@
   }
 
   .stripe_myskills {
-    top: 1963px;
+    top: 56px;
+    right: -198px;
   }
 }
 
@@ -206,7 +209,8 @@
   }
 
   .stripe_myskills {
-    top: 2736px;
+    top: 56px;
+    right: -198px;
   }
 
   .myskills {
@@ -260,40 +264,58 @@
   }
 
   .stripe_myskills {
-    top: 2592px;
-    width: 113px;
+    top: 56px;
+    right: -198px;
   }
 
-  .myskills_text{
+  .myskills_text {
     width: 491px;
   }
 }
 
-@media(max-width: 740px){
-.stripe_myskills{
-  top: 2337px;
-}
+@media (max-width: 740px) {
+  .stripe_myskills {
+    top: 56px;
+    right: -198px;
+  }
+
 
 }
+@media (max-width: 605px){
 
+  .myskills_text{
+    width: unset;
+  }
+
+}
 @media (max-width: 560px) {
   .myskills {
-padding-left: 0px;
-padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 20px;
     h1 {
       font-size: 50px;
     }
   }
 
-  .myskills-component{
+  .myskills-component {
     padding-left: 0px;
     padding-right: 0px;
     align-items: center;
   }
 
-  .stripe_myskills{
-    top: 1938px;
-    width: 15px;
+  .stripe_myskills {
+    top: 34px;
+    right: -198px;
   }
+}
 
+
+@media(max-width: 535px){
+  .myskills{
+    padding-right: 52px;
+  }
+  .stripe_myskills {
+    top: 40px;
+    right: -152px;
+  }
 }
