@@ -11,6 +11,7 @@
 
   <div class="contact-right-side">
     <form (submit)="sendMail()" ngNativeValidate #myForm>
+      <div class="submit_suc" *ngIf="showSuccessMessage"> Successfully submitted</div>
       <input placeholder="Your name" required type="text" name="name" #nameField>
       <input placeholder="Your email" required type="email" name="name" #mailField>
       <textarea placeholder="Your message" required type="text" message="message" #messageField></textarea>
