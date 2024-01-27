@@ -110,6 +110,7 @@
       margin-right: 20px;
     }
   }
+
   .checkbox-area {
     gap: 2px;
     display: flex;
@@ -163,13 +164,12 @@
 
 .go-up-button {
   position: absolute;
-  top: 6000px;
+  bottom: 370px;
   right: 200px;
   transition: 0.1s;
 
   &:hover {
-    filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4337%)
-      hue-rotate(33deg) brightness(93%) contrast(94%);
+    filter: brightness(0) saturate(100%) invert(91%) sepia(97%) saturate(4337%) hue-rotate(33deg) brightness(93%) contrast(94%);
   }
 }
 
@@ -191,9 +191,11 @@
   0% {
     transform: scale(1, 1);
   }
+
   50% {
     transform: scale(1.1, 1.1);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -241,9 +243,11 @@
       input {
         width: 435px;
       }
+
       textarea {
         width: 435px;
       }
+
       .checkbox-area {
         word-break: break-word;
       }
@@ -262,6 +266,7 @@
   .contact-component {
     padding-left: 20px;
     padding-right: 20px;
+
     .contact-right-side {
       form {
         .checkbox-area {
@@ -294,9 +299,11 @@
     .contact-title {
       font-size: 18px;
     }
+
     .contact-description {
       font-size: 12px;
     }
+
     .contact-description-need {
       font-size: 12px;
     }
@@ -310,6 +317,7 @@
         .checkbox-area {
           flex-direction: column;
           align-items: center;
+
           .checkbox {
             margin: 0;
           }
@@ -325,11 +333,13 @@
       input {
         width: 80vw;
       }
+
       textarea {
         width: 80vw;
       }
     }
   }
+
   .submit_suc {
     font-size: 18px;
   }
