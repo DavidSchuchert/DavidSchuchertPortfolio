@@ -159,9 +159,10 @@ html {
   overflow-x: clip;
 }
 
-.scroll-distance{
+.scroll-distance {
   height: 110px;
 }
+
 /* Styles for Portfolio projects */
 
 .portfolio-right {
@@ -173,8 +174,9 @@ html {
   padding-right: 200px;
   padding-left: 200px;
   gap: 180px;
-  a{
-    text-decoration:none;
+
+  a {
+    text-decoration: none;
     color: white;
   }
 }
@@ -188,14 +190,14 @@ html {
   padding-right: 200px;
   padding-left: 200px;
   gap: 180px;
-  a{
-    text-decoration:none;
+
+  a {
+    text-decoration: none;
     color: white;
   }
 }
 
-.portfolio-img {
-}
+.portfolio-img {}
 
 .portfolio-project-info {
   flex-direction: column;
@@ -309,21 +311,124 @@ html {
   }
 }
 
-@media(max-width: 640px){
-  .portfolio-img{
-    img{
+@media(max-width: 640px) {
+  .portfolio-img {
+    img {
       width: 80vw;
     }
   }
 }
 
-@media(max-width: 426px){
-.project-buttons{
-  button{
-    font-size: 12px;
-    font-weight: 700;
-    width: 93px;
-    height: 43px;
+@media(max-width: 426px) {
+  .project-buttons {
+    button {
+      font-size: 12px;
+      font-weight: 700;
+      width: 93px;
+      height: 43px;
+    }
   }
 }
+
+
+
+/* Responsive Widescreen */
+
+@media (min-width: 2300px) {
+  .portfolio-right {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .portfolio-left {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .portfolio-right {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  .portfolio-left {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
+@media (min-width: 2700px) {
+  .portfolio-right {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  .portfolio-left {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}
+
+@media (min-width: 2900px) {
+  .portfolio-right {
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+
+  .portfolio-left {
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+}
+
+@media (min-width: 3100px) {
+  .portfolio-right {
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+
+  .portfolio-left {
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+}
+
+
+@media (min-width: 3300px) {
+  .portfolio-right {
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+
+  .portfolio-left {
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+}
+
+
+
+/* SCROLL */
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #7346ff #c2ccff;
+}
+
+/* Other browsers */
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2f3a4d;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7346ff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
 }

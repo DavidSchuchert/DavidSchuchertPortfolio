@@ -8,11 +8,13 @@
   display: flex;
   justify-content: space-between;
 }
+
 .skills_icons {
   max-width: 790px;
   display: flex;
   gap: 54px;
   flex-wrap: wrap;
+
   img {
     &:hover {
       animation: Bounce 1s ease 0s 1 normal forwards;
@@ -72,6 +74,7 @@
   flex-direction: column;
   gap: 34px;
   position: relative;
+
   h1 {
     font-size: 90px;
     font-weight: 700;
@@ -215,6 +218,7 @@
 
   .myskills {
     padding-right: 22px;
+
     button {
       display: none;
     }
@@ -238,6 +242,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+
     a {
       text-decoration: none;
     }
@@ -281,17 +286,20 @@
 
 
 }
-@media (max-width: 605px){
 
-  .myskills_text{
+@media (max-width: 605px) {
+
+  .myskills_text {
     width: unset;
   }
 
 }
+
 @media (max-width: 560px) {
   .myskills {
     padding-left: 0px;
     padding-right: 20px;
+
     h1 {
       font-size: 50px;
     }
@@ -310,12 +318,88 @@
 }
 
 
-@media(max-width: 535px){
-  .myskills{
+@media(max-width: 535px) {
+  .myskills {
     padding-right: 52px;
   }
+
   .stripe_myskills {
     top: 40px;
     right: -152px;
+  }
+}
+
+
+/* Responsive Widescreen */
+
+@media (min-width: 2300px) {
+  .myskills-component {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .stripe_myskills {
+    right: -306px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .myskills-component {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  .stripe_myskills {
+    right: -406px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 2700px) {
+  .myskills-component {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+
+  .stripe_myskills {
+    right: -506px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 2900px) {
+  .myskills-component {
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+
+  .stripe_myskills {
+    right: -606px;
+    width: 600px;
+  }
+}
+
+@media (min-width: 3100px) {
+  .myskills-component {
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+
+  .stripe_myskills {
+    right: -706px;
+    width: 700px;
+  }
+}
+
+@media (min-width: 3300px) {
+  .myskills-component {
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+
+  .stripe_myskills {
+    right: -806px;
+    width: 800px;
   }
 }

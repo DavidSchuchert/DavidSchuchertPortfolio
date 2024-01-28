@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .aboutme-text,
 .personal-things,
 .puzzle {
@@ -33,8 +34,7 @@
   width: 471px;
 }
 
-.aboutme-text {
-}
+.aboutme-text {}
 
 .personal-things,
 .puzzle {
@@ -100,97 +100,231 @@
 @media (max-width: 1340px) {
 
 
-  .line, .ellipse, .small_profile_pic {
-    display:none;
+  .line,
+  .ellipse,
+  .small_profile_pic {
+    display: none;
   }
-.aboutme-section{
-  align-items: center;
+
+  .aboutme-section {
+    align-items: center;
+  }
+
+  .aboutme-text,
+  .personal-things,
+  .puzzle {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+
+  .purple-shadow {
+    top: 1918px;
+  }
+
 }
 
-.aboutme-text,
-.personal-things,
-.puzzle {
-  font-weight: 400;
-  font-size: 16px;
-}
 
-
-.purple-shadow{
-  top: 1918px;
-}
-
-}
-
-
-@media(max-width: 1250px ){
-  .purple-shadow{
+@media(max-width: 1250px) {
+  .purple-shadow {
     top: 1262px;
   }
 }
 
-@media(max-width: 800px){
-  .purple-shadow{
+@media(max-width: 800px) {
+  .purple-shadow {
     top: 1200px;
     width: 20vw;
   }
 }
 
-@media(max-width: 740px){
-  .aboutme-headline{
+@media(max-width: 740px) {
+  .aboutme-headline {
     font-size: 50px;
     padding-bottom: 30px;
   }
 
   .aboutme-text,
-.personal-things,
-.puzzle {
-  font-size: 14px;
+  .personal-things,
+  .puzzle {
+    font-size: 14px;
+
+  }
 
 }
 
-}
+@media (max-width: 560px) {
+  .aboutme-section {
 
-@media (max-width: 560px){
-.aboutme-section{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-padding-left : 0 !important;
-padding-right: 0 !important;
-}
+  .purple-shadow {
+    top: 1000px;
 
-.purple-shadow{
-  top: 1000px;
+  }
 
-}
-
-.aboutme-text,
-.personal-things,
-.puzzle {
-word-break: normal;
-font-size: 10px;
-max-width: 90vw;
-}
-
-
-}
-
-@media (max-width: 510px){
   .aboutme-text,
   .personal-things,
   .puzzle {
-  word-break: normal;
-  font-size: 15px;
-  max-width: 90vw;
+    word-break: normal;
+    font-size: 10px;
+    max-width: 90vw;
   }
 
-.aboutme-text-section{
-  width: unset;
+
 }
+
+@media (max-width: 510px) {
+
+  .aboutme-text,
+  .personal-things,
+  .puzzle {
+    word-break: normal;
+    font-size: 15px;
+    max-width: 90vw;
   }
 
-  @media (max-width: 400px){
-    .purple-shadow{
-      top: 800px;
+  .aboutme-text-section {
+    width: unset;
+  }
+}
 
+@media (max-width: 400px) {
+  .purple-shadow {
+    top: 800px;
+
+  }
+
+}
+
+
+/* Responsive Widescreen */
+
+@media (min-width: 2300px) {
+  .aboutme-section {
+    padding-left: 300px;
+    padding-right: 300px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 469px;
+      }
+
+      .line {
+        width: 470px;
+      }
+
+      .ellipse {
+        right: 467px;
+      }
     }
-
   }
+}
+
+@media (min-width: 2500px) {
+  .aboutme-section {
+    padding-left: 400px;
+    padding-right: 400px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 569px;
+      }
+
+      .line {
+        width: 570px;
+      }
+
+      .ellipse {
+        right: 567px;
+      }
+    }
+  }
+}
+
+@media (min-width: 2700px) {
+  .aboutme-section {
+    padding-left: 500px;
+    padding-right: 500px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 669px;
+      }
+
+      .line {
+        width: 670px;
+      }
+
+      .ellipse {
+        right: 667px;
+      }
+    }
+  }
+}
+
+@media (min-width: 2900px) {
+  .aboutme-section {
+    padding-left: 600px;
+    padding-right: 600px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 769px;
+      }
+
+      .line {
+        width: 770px;
+      }
+
+      .ellipse {
+        right: 767px;
+      }
+    }
+  }
+}
+
+@media (min-width: 3100px) {
+  .aboutme-section {
+    padding-left: 700px;
+    padding-right: 700px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 869px;
+      }
+
+      .line {
+        width: 870px;
+      }
+
+      .ellipse {
+        right: 867px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 3300px) {
+  .aboutme-section {
+    padding-left: 800px;
+    padding-right: 800px;
+
+    .aboutme-img {
+      .small_profile_pic {
+        right: 969px;
+      }
+
+      .line {
+        width: 970px;
+      }
+
+      .ellipse {
+        right: 967px;
+      }
+    }
+  }
+}

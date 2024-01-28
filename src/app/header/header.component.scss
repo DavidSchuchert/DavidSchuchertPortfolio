@@ -169,3 +169,49 @@ header{
 }
 
 }
+
+
+/* Responsive Widescreen */
+
+@media (min-width: 2300px){
+  header{
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 2500px){
+  header{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
+@media (min-width: 2700px){
+  header{
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}
+
+@media (min-width: 2900px){
+  header{
+    padding-left: 600px;
+    padding-right: 600px;
+  }
+}
+
+
+@media (min-width: 3100px){
+  header{
+    padding-left: 700px;
+    padding-right: 700px;
+  }
+}
+
+@media (min-width: 3300px){
+  header{
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+}

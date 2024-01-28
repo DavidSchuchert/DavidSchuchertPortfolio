@@ -94,8 +94,8 @@
   z-index: -1;
 }
 
-.swoosh-small{
-  display:none;
+.swoosh-small {
+  display: none;
 }
 
 /* Responsive */
@@ -173,6 +173,7 @@
   .iam-page {
     justify-content: space-evenly;
   }
+
   .iam-main-text {
     padding-right: 0px;
   }
@@ -391,4 +392,89 @@
   }
 }
 
-@media (max-width: 410px) {}
+/* Responsive Widescreen */
+
+@media (min-width: 2300px) {
+  .full-image {
+    padding-left: 300px;
+  }
+
+  .profile-background-shadows {
+    left: 200px;
+  }
+
+  .iam-main-text {
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .full-image {
+    padding-left: 400px;
+  }
+
+  .profile-background-shadows {
+    left: 300px;
+  }
+
+  .iam-main-text {
+    padding-right: 400px;
+  }
+}
+
+@media (min-width: 2700px) {
+  .full-image {
+    padding-left: 500px;
+  }
+
+  .profile-background-shadows {
+    left: 400px;
+  }
+
+  .iam-main-text {
+    padding-right: 500px;
+  }
+}
+
+@media (min-width: 2900px) {
+  .full-image {
+    padding-left: 600px;
+  }
+
+  .profile-background-shadows {
+    left: 500px;
+  }
+
+  .iam-main-text {
+    padding-right: 600px;
+  }
+}
+
+
+@media (min-width: 3100px) {
+  .full-image {
+    padding-left: 700px;
+  }
+
+  .profile-background-shadows {
+    left: 600px;
+  }
+
+  .iam-main-text {
+    padding-right: 700px;
+  }
+}
+
+@media (min-width: 3300px) {
+  .full-image {
+    padding-left: 800px;
+  }
+
+  .profile-background-shadows {
+    left: 700px;
+  }
+
+  .iam-main-text {
+    padding-right: 800px;
+  }
+}
